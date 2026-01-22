@@ -157,7 +157,8 @@ body{
 }
 
 .section-head{
-  margin-bottom: 44px;
+  margin-bottom: 64px;
+  text-align: center;
 }
 
 .section-head h2{
@@ -171,12 +172,13 @@ body{
 /* Luxe rows */
 .rows{
   display:grid;
-  gap: 34px;
+  gap: 56px;                 /* more breathing room */
+  justify-items: center;     /* centers each item */
 }
 
 .row{
-  padding-left: 0;
-  border-left: none;
+  max-width: 520px;          /* keeps lines elegant */
+  text-align: center;        /* centers text */
 }
 
 .row h3{
@@ -197,9 +199,11 @@ body{
 
 /* Who */
 .prose{
-  max-width: 70ch;
+  max-width: 62ch;
+  margin: 0 auto;     /* centers the block */
   display:grid;
-  gap: 18px;
+  gap: 26px;
+  text-align: center;
 }
 
 .prose p{
@@ -210,14 +214,10 @@ body{
 }
 
 .social{
-  margin-top: 56px;
-  padding-top: 26px;
-  border-top: 1px solid var(--line);
   display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap: 12px;
-  flex-wrap:wrap;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
 }
 
 .social-label{
