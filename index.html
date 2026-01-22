@@ -4,40 +4,167 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>NavyGreen Design Co</title>
-    <meta name="description" content="NavyGreen Design Co — thoughtful design, curated finds, and creative home projects." />
+    <meta name="description" content="NavyGreen Design Co — thoughtful design, curated finds, and clean home styling." />
 
+    <!-- Fonts: elegant script for brand + clean sans for body -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <!-- Tall elegant serif + clean sans -->
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
 
-    <link rel="stylesheet" href="styles.css" />
+    <!-- Cache buster so you actually see updates -->
+    <link rel="stylesheet" href="styles.css?v=7" />
   </head>
 
   <body>
-    <main class="center">
-      <div class="stack">
-        <p class="kicker">NAVYGREEN DESIGN CO</p>
-
-        <h1 class="wordmark">NavyGreen</h1>
-
-        <p class="subhead">
-          Clean, elevated home design — sourcing, styling, and thoughtful refreshes.
-        </p>
-
-        <div class="actions">
-          <a class="btn primary" href="https://instagram.com/navygreendesignco" target="_blank" rel="noreferrer">
-            Follow @navygreendesignco
+    <header class="header">
+      <div class="wrap">
+        <nav class="nav">
+          <a class="nav-brand" href="#top" aria-label="NavyGreen home">
+            <span class="monogram" aria-hidden="true">NG</span>
           </a>
-          <a class="btn ghost" href="mailto:hello@navygreen.co?subject=NavyGreen%20Inquiry">
-            Email
+          <div class="nav-links">
+            <a href="#what">What we do</a>
+            <a href="#who">Who we are</a>
+            <a href="#contact">Contact us</a>
+          </div>
+        </nav>
+
+        <div id="top" class="hero">
+          <p class="kicker">NAVYGREEN DESIGN CO</p>
+
+          <h1 class="wordmark" aria-label="NavyGreen">
+            NavyGreen
+          </h1>
+
+          <p class="tagline">
+            Elegant, livable interiors — sourcing, styling, and thoughtful refreshes.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn primary" href="#contact">Start a project</a>
+            <a
+              class="btn ghost"
+              href="https://instagram.com/navygreendesignco"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Follow @navygreendesignco
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="wrap">
+      <section id="what" class="section">
+        <div class="section-header">
+          <h2>What we do</h2>
+          <p class="section-sub">
+            Simple upgrades, smart sourcing, and design decisions that make a space feel finished.
+          </p>
+        </div>
+
+        <div class="cards">
+          <div class="card">
+            <h3>Design + Styling</h3>
+            <p>Room refreshes, layout guidance, finishing touches, and styling that feels intentional and calm.</p>
+          </div>
+
+          <div class="card">
+            <h3>Sourcing + Curated Finds</h3>
+            <p>Marketplace and thrift sourcing, plus clean, modern selections that elevate without overspending.</p>
+          </div>
+
+          <div class="card">
+            <h3>Flips + Creative Projects</h3>
+            <p>Thoughtful transformations—paint, hardware, and simple upgrades that make pieces feel custom.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="who" class="section">
+        <div class="section-header">
+          <h2>Who we are</h2>
+          <p class="section-sub">
+            NavyGreen is a design studio rooted in clean lines, warm details, and real-life function.
+          </p>
+        </div>
+
+        <div class="two-col">
+          <div class="panel">
+            <p>
+              We believe great design doesn’t have to be complicated. Our approach is minimal, elevated, and practical:
+              start with what you have, make a few high-impact changes, and bring the whole space into balance.
+            </p>
+            <p>
+              Whether you need a quick refresh, help sourcing pieces, or a creative flip idea, we keep it simple and
+              make it feel like you.
+            </p>
+          </div>
+
+          <div class="panel accent">
+            <p class="accent-title">Follow along</p>
+            <a
+              class="inline-link"
+              href="https://instagram.com/navygreendesignco"
+              target="_blank"
+              rel="noreferrer"
+            >
+              instagram.com/navygreendesignco →
+            </a>
+
+            <div class="divider"></div>
+
+            <p class="accent-title">Typical projects</p>
+            <ul class="list">
+              <li>One-room refreshes</li>
+              <li>Sourcing + styling sessions</li>
+              <li>Marketplace flips</li>
+              <li>Finishing-touch plans</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <div class="section-header">
+          <h2>Contact us</h2>
+          <p class="section-sub">
+            Tell us what you’re working on and we’ll reply with next steps.
+          </p>
+        </div>
+
+        <div class="contact">
+          <!-- Change this email to your real one if hello@navygreen.co isn't set up yet -->
+          <a class="btn primary" href="mailto:hello@navygreen.co?subject=NavyGreen%20Inquiry">
+            Email: hello@navygreen.co
+          </a>
+          <a
+            class="btn ghost"
+            href="https://instagram.com/navygreendesignco"
+            target="_blank"
+            rel="noreferrer"
+          >
+            DM on Instagram
           </a>
         </div>
 
-        <p class="fine">
-          Serving clients locally + virtually • Styling • Sourcing • Flips
+        <p class="fineprint">
+          Prefer a different email for now? Update the mailto link above (we can switch back to
+          <strong>hello@navygreen.co</strong> once it’s set up).
         </p>
-      </div>
+      </section>
+
+      <footer class="footer">
+        <p>© <span id="year"></span> NavyGreen Design Co</p>
+      </footer>
     </main>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
   </body>
 </html>
