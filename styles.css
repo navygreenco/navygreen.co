@@ -175,8 +175,8 @@ body{
 }
 
 .row{
-  padding-left: 18px;
-  border-left: 1px solid rgba(200,162,74,.40);
+  padding-left: 0;
+  border-left: none;
 }
 
 .row h3{
