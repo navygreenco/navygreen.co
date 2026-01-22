@@ -1,6 +1,5 @@
 :root{
-  --bg: #0B1A12
-;            /* dark olive green */
+  --bg: #0B1A12;            /* dark olive green */
   --gold: #B08A3C;
   --ivory: #F5EFE3;         /* warm ivory */
   --muted: rgba(245,239,227,.72);
