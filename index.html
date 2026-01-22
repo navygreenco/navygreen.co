@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>NavyGreen Design Co</title>
+    <meta name="description" content="NavyGreen Design Co — thoughtful design, curated finds, and creative home projects." />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23162E1A'/%3E%3Cpath d='M18 44V20h6l8 14 8-14h6v24h-6V31l-8 13-8-13v13h-6z' fill='%23C8A24A'/%3E%3C/svg%3E" />
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Preconnect improves font loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Elegant tall serif + clean sans -->
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  </head>
+
+  <body>
+    <header class="wrap">
+      <nav class="nav">
+        <div class="brand-mark" aria-hidden="true">NG</div>
+        <div class="nav-links">
+          <a href="#work">Services</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+
+      <main class="hero">
+        <p class="eyebrow">NAVYGREEN DESIGN CO</p>
+
+        <h1 class="logo">
+          <span class="logo-tall">NavyGreen</span>
+        </h1>
+
+        <p class="tagline">
+          Thoughtful design, curated finds, and clean, modern home styling.
+        </p>
+
+        <div class="cta">
+          <a class="btn primary" href="https://instagram.com/navygreendesignco" target="_blank" rel="noreferrer">
+            Follow @navygreendesignco
+          </a>
+          <a class="btn ghost" href="#contact">Get in touch</a>
+        </div>
+
+        <div class="subnote">
+          Serving clients locally + virtually • Styling • Sourcing • Refreshes • Flips
+        </div>
+      </main>
+    </header>
+
+    <section id="work" class="section wrap">
+      <h2>What we do</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Design + Styling</h3>
+          <p>Room refreshes, finishing touches, layout help, and styling that feels intentional and livable.</p>
+        </div>
+        <div class="card">
+          <h3>Curated Finds</h3>
+          <p>Facebook Marketplace &amp; thrift sourcing, plus smart swaps that elevate your space without overspending.</p>
+        </div>
+        <div class="card">
+          <h3>Flips + Projects</h3>
+          <p>Creative transformations—paint, hardware, and simple upgrades that make pieces feel custom.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section wrap">
+      <h2>About NavyGreen</h2>
+      <div class="two-col">
+        <p>
+          NavyGreen is a design studio focused on clean lines, warm details, and homes that work for real life.
+          Our style is simple, elevated, and practical—built around what you already have, plus a few well-chosen upgrades.
+        </p>
+        <div class="mini-card">
+          <p class="mini-title">Follow the latest projects</p>
+          <a class="inline-link" href="https://instagram.com/navygreendesignco" target="_blank" rel="noreferrer">
+            instagram.com/navygreendesignco →
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section wrap">
+      <h2>Contact</h2>
+      <div class="contact-card">
+        <p>Want help with a room refresh, sourcing, or a flip idea?</p>
+        <div class="contact-actions">
+          <!-- Replace the email below with your preferred email when ready -->
+          <a class="btn primary" href="mailto:hello@navygreen.co?subject=NavyGreen%20Inquiry">Email: hello@navygreen.co</a>
+          <a class="btn ghost" href="https://instagram.com/navygreendesignco" target="_blank" rel="noreferrer">DM on Instagram</a>
+        </div>
+        <p class="fineprint">
+          Tip: once your email is set up, we’ll keep this as <strong>hello@navygreen.co</strong>. For now, you can change it to any Gmail address.
+        </p>
+      </div>
+    </section>
+
+    <footer class="footer wrap">
+      <p>© <span id="year"></span> NavyGreen Design Co</p>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
