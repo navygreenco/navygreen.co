@@ -85,19 +85,11 @@ body{
   color: rgba(245,239,227,.66);
 }
 
-.brand{
-  margin: 0;
-  font-family: "Parisienne", cursive;
-  font-weight: 400;
-  font-size: clamp(140px, 16vw, 220px);
-  line-height: 0.78;
-  letter-spacing: -0.01em;
-
-  /* These two lines matter a LOT for script fonts */
-  -webkit-font-smoothing: antialiased;
-  text-rendering: geometricPrecision;
-
-  color: var(--gold);
+.brand-logo{
+  display: block;
+  width: min(760px, 92vw);
+  height: auto;
+  margin: 0 auto;          /* centered */
 }
 
 .hairline{
