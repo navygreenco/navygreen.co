@@ -203,12 +203,20 @@
 
       // Slider interaction
       function updateSlider(e) {
-        const rect = slider.getBoundingClientRect();
-        const x = (e.clientX || e.touches[0].clientX) - rect.left;
-        const percent = Math.max(0, Math.min(100, (x / rect.width) * 100));
-        afterImg.style.clipPath = `inset(0 0 0 ${percent}%)`;
-        slider.querySelector('.slider-handle').style.left = `${percent}%`;
-      }
+  const rect = slider.getBoundingClientRect();
+  let x;
+  
+  // Handle both mouse and touch events
+  if (e.touches) {
+    x = e.touches[0].clientX - rect.left;
+  } else {
+    x = e.clientX - rect.left;
+  }
+  
+  const percent = Math.max(0, Math.min(100, (x / rect.width) * 100));
+  afterImg.style.clipPath = `inset(0 0 0 ${percent}%)`;
+  slider.querySelector('.slider-handle').style.left = `${percent}%`;
+}
 
       slider.addEventListener('mousedown', (e) => {
         isDragging = true;
