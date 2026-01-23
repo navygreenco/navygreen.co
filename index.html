@@ -1,117 +1,126 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>NavyGreen</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>NavyGreen Design Co</title>
+    <meta name="description" content="NavyGreen Design Co — elevated interiors, curated sourcing, and thoughtful styling." />
 
-  <style>
-    :root {
-      --green: #162E1A;
-      --gold: #C6A75E;
-      --cream: #F4F1EC;
-    }
 
-    * {
-      box-sizing: border-box;
-    }
+    <!-- cache-buster -->
+    <link rel="stylesheet" href="styles.css?v=58" />
+  </head>
 
-    body {
-      margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
-        Roboto, Helvetica, Arial, sans-serif;
-      background-color: var(--green);
-      color: var(--cream);
-      line-height: 1.6;
-    }
+  <body>
+    <header class="top" id="top">
+      <div class="wrap">
+        <nav class="nav">
+          <a class="nav-home" href="#top" aria-label="Home">
+            <span class="nav-initials">NG</span>
+          </a>
 
-    header {
-      padding: 80px 20px;
-      text-align: center;
-    }
+          <div class="nav-links">
+            <a href="#what">What we do</a>
+            <a href="#who">Who we are</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </nav>
 
-    header h1 {
-      margin: 0;
-      font-size: 3rem;
-      letter-spacing: 1px;
-      color: var(--gold);
-    }
+        <div class="hero">
+          <p class="kicker">NAVYGREEN DESIGN CO</p>
+          <img class="brand-logo" src="NavyGreen.svg" alt="NavyGreen" />
 
-    header p {
-      margin-top: 12px;
-      font-size: 1.1rem;
-      max-width: 640px;
-      margin-left: auto;
-      margin-right: auto;
-    }
+          <div class="hairline" aria-hidden="true"></div>
 
-    section {
-      padding: 80px 20px;
-    }
+          <p class="lede">
+            Styling, sourcing, and refreshes, all designed to feel calm, warm, and finished.
+          </p>
 
-    .container {
-      max-width: 900px;
-      margin: 0 auto;
-    }
+          <div class="hero-actions">
+            <a class="btn gold" href="#contact">Start a project</a>
+            <a class="btn outline" href="https://instagram.com/navygreendesignco" target="_blank" rel="noreferrer">
+              Follow @navygreendesignco
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
 
-    .who-we-are h2 {
-      margin-top: 0;
-      color: var(--gold);
-      font-size: 2rem;
-    }
+    <main class="wrap">
+      <section class="section" id="what">
+        <div class="section-head">
+          <h2>What we do</h2>
+        </div>
 
-    .who-we-are p {
-      font-size: 1.05rem;
-      max-width: 720px;
-    }
+        <div class="rows">
+          <div class="row">
+            <h3>Design + Styling</h3>
+            <p>Room refreshes, layout guidance, and finishing touches.</p>
+          </div>
 
-    footer {
-      padding: 40px 20px;
-      text-align: center;
-      font-size: 0.9rem;
-      opacity: 0.8;
-    }
-  </style>
-</head>
+          <div class="row">
+            <h3>Sourcing</h3>
+            <p>Curated finds from Marketplace, thrift, and beyond.</p>
+          </div>
 
-<body>
+          <div class="row">
+            <h3>Flips</h3>
+            <p>Thoughtful transformations that make pieces feel custom.</p>
+          </div>
+        </div>
+      </section>
 
-  <!-- HERO -->
-  <header>
-    <h1>NavyGreen</h1>
-    <p>
-      Thoughtful design for calm, functional, and beautifully lived-in spaces.
-    </p>
-  </header>
+      <section class="section" id="who">
+        <div class="section-head">
+          <h2>Who we are</h2>
+        </div>
 
-  <!-- WHO WE ARE -->
-  <section id="who-we-are">
-    <div class="container who-we-are">
-      <h2>Who We Are</h2>
+        <div class="prose">
+          <p>
+  I’m the best wife and mother a family could ever ask for, and I’m finally
+  putting my great eye for design — and my genuine love of helping others —
+  to work through this new venture.
+</p>
 
-      <p>
-        I’m the best wife and mother a family could ever ask for, and I’m finally
-        putting my great eye for design — and my genuine love of helping others —
-        to work through this new venture.
-      </p>
+<p>
+  NavyGreen was created from years of thoughtfully styling, refreshing, and
+  reimagining spaces so they feel calm, functional, and truly lived in. I
+  believe good design should feel personal, approachable, and effortless —
+  never intimidating.
+</p>
+        </div>
 
-      <p>
-        NavyGreen was created from years of thoughtfully styling, refreshing, and
-        reimagining spaces so they feel calm, functional, and truly lived in. I
-        believe good design should feel personal, approachable, and effortless —
-        never intimidating.
-      </p>
-    </div>
-  </section>
+        <div class="social">
+          <span class="social-label">Instagram</span>
+          <a class="social-link" href="https://instagram.com/navygreendesignco" target="_blank" rel="noreferrer">
+            @navygreendesignco →
+          </a>
+        </div>
+      </section>
 
-  <!-- FOOTER -->
-  <footer>
-    © <span id="year"></span> NavyGreen
-  </footer>
+      <section class="section" id="contact">
+        <div class="section-head">
+          <h2>Contact</h2>
+        </div>
 
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+        <div class="contact-actions">
+          <!-- change if hello@navygreen.co isn't set up yet -->
+          <a class="btn gold" href="mailto:hello@navygreen.co?subject=NavyGreen%20Inquiry">Email</a>
+          <a class="btn outline" href="https://instagram.com/navygreendesignco" target="_blank" rel="noreferrer">DM</a>
+        </div>
 
-</body>
+        <p class="fineprint">
+          Prefer email? Use <strong>hello@navygreen.co</strong>.
+        </p>
+      </section>
+
+      <footer class="footer">
+        <p>© <span id="year"></span> NavyGreen Design Co</p>
+      </footer>
+    </main>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
 </html>
